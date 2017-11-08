@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+html,body{
+    height: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+   list-style-type: none;
+}
+/*--------------------*/
+.app{
+    padding: 10.5rem 1.5rem 1.5rem; 
+    border-radius: .4rem;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    margin-top: 7rem; 
+    min-width: 60rem;
+}
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    border-radius: .4rem .4rem 0 0;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.header .headline{
+    color:#0051FFe;
+}
+
+.filter-box{
+    display:flex;
+    align-items: center;
+}
+.filter{
+    height: 3.5rem;
+    width: 24rem;
+    outline: none;
+    border-radius: .5rem;
+    border:white 2px solid;
+    transition:border .5s;
+    padding: 1rem;
+}
+.filter:focus{
+    border:tomato 2px solid;
+}
+.filter_title{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0051FF;
+    margin-right: 1.5rem;
+    /* display: block; */
+}
+.headline{
+    font-size: 5rem;
+    font-weight:normal;
+    text-align: center;
+    color:slategray;
+}
+.paragraph{
+    font-size: 3.8rem;
+    font-weight:400;
+    text-align: center;
+    color: slategray;
+}
+.white-text{
+     color:mintcream;
+}
+.top-bar{
+    width:100%;
+    height: 70px;
+    padding: 20px;
+    color: white;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.top-bar h1{
+    font-size: 3rem;
+    font-weight:normal;
+    color:papayawhip;
+}
+.logo{
+    height: 5rem;
+    animation: spin 2s linear infinite;
+}
+
+.list-title{
+    padding: 1.4rem;
+    font-size: 3.2rem;
+    font-weight:400;
+    text-align: center;
+    color: slategray;
+}
+.cards-list{
+    background: #FFFFFF;
+    height: 75vh;
+	border-radius: .4rem;
+	overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 .2rem .8rem DimGrey;
+    flex:1;
+    min-width:310px;
+}
+
+.card-item:nth-child(even) {
+    background: honeydew;
+}
+.card-item:nth-child(odd) {
+    background: white;
+}
+.card{
+	padding: 2rem 2.8rem;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+}
+.card:hover{
+    background: paleturquoise;
+}
+.card:hover .thumb{
+    box-shadow: 0 .4rem 1.5rem DimGrey;
+     margin-bottom:3rem;
+     padding-bottom:1rem;
+}
+.card:active{
+    background: skyblue;
+    color: white;
+}
+.card:active .paragraph{
+    color: white;
+}
+.card:active .thumb{
+    box-shadow: 0 .4rem 1.5rem DimGrey;
+}
+.texts-box{
+	padding-left: 2.8rem;
+}
+.card-title{
+    text-align: left;
+    font-size: 2.8rem;
+}
+.card-msg{
+	font-size: 1.4rem;
+	max-width: 35rem;
+}
+.thumb{
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	background-color:rgb(214, 237, 255);
+    transition: box-shadow 150ms, margin 150ms,padding 150ms;
+}
+
+.content-box{
+	border-radius:5px;
+	display: flex;
+}
+.profile-box{
+	 padding: 1.5rem;
+	 display: flex;
+	 flex-direction: column;
+	 padding-right:15px;
+     align-items: center;
+}
+.grad-line{
+    display:block;
+    width: 100%;
+    border:none;
+    height:1px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(midnightblue), to(Cornsilk));
+}
+.profile-image-box{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+        width:20rem;
+        height:20rem;
+}
+.profile-image-box img{
+    border-radius: 50%;
+}
+.profile-details-box{
+	padding: 10px;
+    text-align: left;
+    color: slategray;
+    font-weight: 400;
+}
+.profile-title{
+    font-size: 2.5rem;
+    font-weight: inherit;
+    text-align: center;
+    margin-top:50px;
+}
+.profile-detail{
+    font-size: 1.5rem;
+    font-weight: inherit;
+    color: darkslateblue;
+}
+.profile-description{
+	font-size: 1.5rem;
+	max-width: 40rem;
+
+}
